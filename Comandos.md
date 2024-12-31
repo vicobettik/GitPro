@@ -106,3 +106,10 @@ A - agregado
 ?? - sin trackeo
 
 MM - primera columna en stage, segunda fuera del stage
+
+### Remover un archivo del trackeo
+
+```bash
+
+F
+```
