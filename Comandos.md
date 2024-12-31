@@ -85,3 +85,24 @@ Changes to be committed:
   modified: CONTRIBUTING.md
 
 ```
+
+#### Comenzar a rastrear nuevos archivos (incluirlos en la foto)
+
+```bash
+
+$ git status -s
+$ git status --short
+
+M README
+MM Rakefile
+A lib/git.rb
+M lib/simplegit.rb
+?? LICENSE.txt
+
+```
+
+M - modificado
+A - agregado
+?? - sin trackeo
+
+MM - primera columna en stage, segunda fuera del stage
