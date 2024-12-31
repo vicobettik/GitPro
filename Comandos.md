@@ -180,7 +180,6 @@ git log -- path/to/file
 
 ```
 
-
 | Opción       | Descripción                                                                 |
 |--------------|-----------------------------------------------------------------------------|
 | -<n>         | Mostrar solo los últimos n commits.                                         |
