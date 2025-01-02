@@ -172,7 +172,7 @@ git log -S function_name
 
 ```
 
-### Muestra los commitsde un archivo
+### Muestra los commits de un archivo
 
 ```bash
 
@@ -195,6 +195,6 @@ git log -- path/to/file
 
 ```bash
 
-git reset HEAD Comandos.md
+git restore --staged README.md
 
 ```
