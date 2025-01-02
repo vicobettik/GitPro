@@ -198,3 +198,10 @@ git log -- path/to/file
 git restore --staged README.md
 
 ```
+
+### Ver remotos del repositorio
+
+```bash
+git remote -v
+```
+
