@@ -189,3 +189,12 @@ git log -- path/to/file
 | --committer  | Mostrar solo commits en los que la entrada del committer coincida con la cadena especificada. |
 | --grep       | Mostrar solo commits con un mensaje de commit que contenga la cadena.       |
 | -S           | Mostrar solo commits que agreguen o eliminen código que coincida con la cadena. |
+
+
+### Sacar un archivo del stage
+
+```bash
+
+git reset HEAD Comandos.md
+
+```
