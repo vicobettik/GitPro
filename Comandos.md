@@ -211,3 +211,16 @@ git remote -v
 git log --oneline --decorate
 ```
 
+```mermaid
+gitGraph
+    commit
+    branch nuevaRama
+    checkout nuevaRama
+    commit
+    checkout main
+    commit
+```
+
+```bash
+git log --oneline --decorate --all --graph
+```
