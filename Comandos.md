@@ -205,3 +205,20 @@ git restore --staged README.md
 git remote -v
 ```
 
+### Agregar remoto al repositorio
+
+```bash
+git remote add [nombreCorto] [url]
+```
+
+### Hacer push a un remoto
+
+```bash
+git push origin master
+```
+
+### Crear una nueva rama
+
+```bash
+git branch nuevaRama
+```
