@@ -205,3 +205,9 @@ git restore --staged README.md
 git remote -v
 ```
 
+### ver log con ramas
+
+```bash
+git log --oneline --decorate
+```
+
