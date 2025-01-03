@@ -182,7 +182,7 @@ git log -- path/to/file
 
 | Opción       | Descripción                                                                 |
 |--------------|-----------------------------------------------------------------------------|
-| -<n>         | Mostrar solo los últimos n commits.                                         |
+| -\<n>         | Mostrar solo los últimos n commits.                                         |
 | --since, --after | Limitar los commits a aquellos realizados después de la fecha especificada. |
 | --until, --before | Limitar los commits a aquellos realizados antes de la fecha especificada.   |
 | --author     | Mostrar solo commits en los que la entrada del autor coincida con la cadena especificada. |
@@ -209,16 +209,6 @@ git remote -v
 
 ```bash
 git log --oneline --decorate
-```
-
-```mermaid
-gitGraph
-    commit
-    branch nuevaRama
-    checkout nuevaRama
-    commit
-    checkout main
-    commit
 ```
 
 ```bash
@@ -256,6 +246,18 @@ git branch nuevaRama
 git checkout - b nuevaRama
 ```
 
+
+```mermaid
+gitGraph
+    commit
+    branch nuevaRama
+    checkout nuevaRama
+    commit
+    checkout main
+    commit
+```
+
+
 ### Hacer merge a una rama
 
 ```bash
@@ -274,3 +276,15 @@ git branch -d hotFix
 ```bash
 git push origin --delete hotFix nuevaRama
 ```
+
+### Clonar una rama remota a una local
+
+```bash
+git checkout -b nombreRama origin/nombreRama
+```
+
+--
+
+## Rebase
+
+![commits](https://git-scm.com/book/en/v2/images/basic-rebase-2.png)
