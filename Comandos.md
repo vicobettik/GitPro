@@ -249,3 +249,15 @@ git push origin master
 ```bash
 git branch nuevaRama
 ```
+
+### Crear una nueva rama y cambiarse a esta
+
+```bash
+git checkout - b nuevaRama
+```
+
+### Hacer merge a una rama
+```bash
+git checkout master
+git merge hotFix
+```
