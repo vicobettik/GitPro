@@ -257,7 +257,20 @@ git checkout - b nuevaRama
 ```
 
 ### Hacer merge a una rama
+
 ```bash
 git checkout master
 git merge hotFix
+```
+
+### Eliminar una rama(local)
+
+```bash
+git branch -d hotFix
+```
+
+### Eliminar una rama(remota)
+
+```bash
+git push origin --delete hotFix nuevaRama
 ```
