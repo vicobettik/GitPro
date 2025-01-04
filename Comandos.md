@@ -288,3 +288,57 @@ git checkout -b nombreRama origin/nombreRama
 ## Rebase
 ![commits](https://git-scm.com/book/es/v2/images/basic-rebase-1.png)
 ![commits](https://git-scm.com/book/en/v2/images/basic-rebase-2.png)
+
+La manera usual de integrar los cambios seria mediante un merge, pero existe otra manera  
+, mediante un rebase o reorganización.
+
+Se obtienen todos los cambios confirmados en una rama y se aplican sobre otra.
+
+```bash
+git checkout experiment
+git rebase master
+```
+
+Git tomará el ancestro común de ambas ramas, (donde se encuntra actualmente y en donde se desea reorganizar), obtiene las diferencias de cada confirmacion, reinicia la rama actual y aplica ordenadamente los cambios.
+
+```bash
+git checkout master
+git merge experiment
+git merge --abort (Abortar una fusion)
+```
+
+![commits](https://git-scm.com/book/es/v2/images/basic-rebase-4.png)
+
+Esto hará que el resultado del merge como del rebase sean exactamente iguales pero el historial será lineal en lugar de en paralelo
+
+### Stash
+
+```bash
+git stash (guardara en un listado sin nombre)
+git merge save "nombreDelStash" (guardado en el stash con nombre)
+git stash list (muestra la lista de los stash)
+git stash apply (aplica el ultimo stash)
+git stash apply@{0,1,2,3} (aplica el stash con el indice)
+```
+
+---
+
+## Git en Visual Studio
+
+### Creacion de una nueva rama
+
+Ir al menu git, crear una nueva rama
+![rama](/imgs/nuevaRama.png)
+
+Escribir el nombre de la rama nueva y elegir en cual se va a basar esta nueva rama
+![modal](/imgs/modal.png)
+
+### Hacer un commit
+
+Ir a la pestaña de git en donde se observarán los archivos que han sido modificados desde el últmo commit
+![git](/imgs/gitVs.png)
+
+Se puede hacer clic en el simbolo de más en el renglon de "cambios", esto agregara TODOS los archivos al stage, o puede agregarse uno por uno haciendo clic en el simbolo de mas de cada archivo modificado.
+
+si se desea sacar del stage uno de los archivos se tiene que dar clic en el boton menos de cada archivo o de todo el stage
+
