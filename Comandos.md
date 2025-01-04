@@ -286,5 +286,5 @@ git checkout -b nombreRama origin/nombreRama
 --
 
 ## Rebase
-
+![commits](https://git-scm.com/book/es/v2/images/basic-rebase-1.png)
 ![commits](https://git-scm.com/book/en/v2/images/basic-rebase-2.png)
