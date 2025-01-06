@@ -342,3 +342,4 @@ Se puede hacer clic en el simbolo de más en el renglon de "cambios", esto agreg
 
 si se desea sacar del stage uno de los archivos se tiene que dar clic en el boton menos de cada archivo o de todo el stage
 
+![diff](/imgs/diff.png)
